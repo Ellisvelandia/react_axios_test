@@ -9,12 +9,12 @@ describe('PokemonList Component', () => {
 
   it('should render pokemon name when api responds', async () => {
     api.getPokemonsFromApi.mockResolvedValue({
-      results: [{ name: "pokedex"}],
+      results: [{ name: 'pokedex' }],
     })
 
     render(<PokemonList />)
     await waitFor(() => {
-      screen.getByText("pokedex")
+      screen.getByText('bulbasaur')
     })
   })
 

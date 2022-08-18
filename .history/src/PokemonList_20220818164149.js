@@ -16,11 +16,11 @@ const PokemonList = () => {
   ) : (
     <table>
       <tbody>
-        {pokemons.map((pokemon) => (
+        {pokemons.map(pokemon) => {
           <tr key={pokemon.name}>
             <td>{pokemon.name}</td>
           </tr>
-        ))}
+        })}
       </tbody>
     </table>
   )
