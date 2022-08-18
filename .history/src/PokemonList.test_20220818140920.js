@@ -1,0 +1,15 @@
+import { render, screen, waitFor } from '@testing-library/react'
+import PokemonList from './PokemonList'
+import * as api from "./api"
+
+jest.mock('./api')
+
+describe('PokemonList component', () => {
+  it('should render pokemon name when api responds', async () => {
+    api.getPokemonsFromApi
+    render(<PokemonList />)
+    await waitFor(() => {
+      screen.getByText('pokedex')
+    })
+  })
+})
