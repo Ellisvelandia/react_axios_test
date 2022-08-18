@@ -44,10 +44,7 @@ function App () {
     <>
       <div className='App'>
         <PokemonList pokemon={pokemon} />
-        <Pagination
-         gotoNextPage={nextPageUrl ?  gotoNextPage : null}
-         gotoPrevPage={prevPageUrl ?  gotoPrevPage : null}
-          />
+        <Pagination gotoNextPage={gotoNextPage} gotoPrevPage={gotoPrevPage} />
       </div>
     </>
   )
