@@ -35,7 +35,7 @@ const Main = () => {
   }, [url]);
   return (
     <>
-      <div className="container" data-testid="main">
+      <div className="container" data-testid="container">
         <div className="left-content">
           <Card
             pokemon={pokeData}
