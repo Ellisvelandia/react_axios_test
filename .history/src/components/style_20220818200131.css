@@ -6,9 +6,10 @@
 }
 body {
   background-color: #fceec8;
+  max-width: 150%;
 }
 .container {
-  width: 100%;
+  width: 90%;
   margin: auto;
   padding-top: 100px;
   display: flex;
@@ -21,17 +22,17 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
   grid-gap: 2rem;
-  margin-left: 10px;
 }
 .card {
-  width: 250px;
+  width: 300px;
   background-color: #9edef9;
   border-radius: 1rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   padding: 0 1.5rem;
+  margin
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   box-sizing: border-box;
 }
 .right-content {
