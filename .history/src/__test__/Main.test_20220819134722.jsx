@@ -3,10 +3,15 @@ import { render } from "@testing-library/react";
 import Main from "../components/Main";
 
 
-test("render component", () => {
-  const { getByTestId } = render(<Main />);
-  const main = getByTestId("main");
 
+let button;
+let main;
+beforeEach(() => {
+  const { getByTestId } = render(<Main />);
+})
+test("render component", () => {
+  const main = getByTestId("main");
+  
   expect(main).toBeDefined();
 });
 

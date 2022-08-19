@@ -3,6 +3,9 @@ import { render } from "@testing-library/react";
 import Main from "../components/Main";
 
 
+
+let button;
+beforeEach
 test("render component", () => {
   const { getByTestId } = render(<Main />);
   const main = getByTestId("main");

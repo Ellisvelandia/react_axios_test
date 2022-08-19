@@ -3,6 +3,7 @@ import { render } from "@testing-library/react";
 import Main from "../components/Main";
 
 
+
 test("render component", () => {
   const { getByTestId } = render(<Main />);
   const main = getByTestId("main");
@@ -12,9 +13,9 @@ test("render component", () => {
 
 test("render component", () => {
   const { getByTestId } = render(<Main />);
-  const button = getByTestId("toggle");
+  const button = getByTestId("main");
 
-  expect(button).toBeDefined();
+  expect(main).toBeDefined();
 });
 
 

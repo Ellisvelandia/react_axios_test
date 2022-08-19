@@ -67,7 +67,7 @@ const Main = () => {
             )}
           </div>
         </div>
-        <div className="right-content">
+        <div className="right-content" data-testid="detail">
           <Pokeinfo data={pokeDex} />
         </div>
       </div>
