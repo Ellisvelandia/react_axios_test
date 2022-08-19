@@ -20,7 +20,7 @@ describe('PokemonList Component', () => {
     api.getPokemonsFromApi.mockRejectedValue({})
     render(<PokemonList />)
     await waitFor(() => {
-      screen.getByText('Unable to axios data')
+      screen.getByText(key: "p")
     })
   })
 })
